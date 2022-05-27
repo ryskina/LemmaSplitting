@@ -1,0 +1,4 @@
+data_LEMMA_TSV
+log.*
+outputs.*
+__pycache__

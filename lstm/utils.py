@@ -212,40 +212,25 @@ def get_langs_and_paths(data_dir=''):
     :param data_dir:
     :return:
     """
-    train_dirs = ['DEVELOPMENT-LANGUAGES', 'SURPRISE-LANGUAGES']
-    test_dir = 'GOLD-TEST'
-    train_dirs, test_dir = [os.path.join(data_dir,d) for d in train_dirs], os.path.join(data_dir,test_dir)
-    print(f"Requirements: this script must have the same path as the folders of SIGMORPHON (SURPRISE-LANG., GOLD-TEST, etc.). The data folder's name should be {data_dir}.\n")
-
-    test_paths = os.listdir(test_dir)
-    langs = [os.path.splitext(p)[0] for p in test_paths]
-    test_paths = {l:p for l,p in zip(langs, [os.path.join(test_dir, s) for s in test_paths])}
-
-    dev_families = [f.path for f in os.scandir(train_dirs[0]) if f.is_dir()]
-    surprise_families = [f.path for f in os.scandir(train_dirs[1]) if f.is_dir()]
-
-    # dev_families = [e.lower() for e in dev_families]
-    # surprise_families = [e.lower() for e in surprise_families]
-    dev_families.sort()
-    surprise_families.sort()
-
     develop_paths = {}
     surprise_paths = {}
-    test_no_gold_paths = {}
+    test_paths = {}
     lang2family = {} # a dictionary that indicates the family of every language
-    for family in dev_families+surprise_families:
-        for file in os.listdir(family):
-            lang, ext = os.path.splitext(file)
-            file = os.path.join(family,file)
+
+    for family in os.listdir(data_dir):
+        for filename in os.listdir(os.path.join(data_dir, family)):
+            lang, ext = os.path.splitext(filename)
+            filename = os.path.join(family,filename)
             if ext=='.trn':
-                develop_paths[lang] = file
+                develop_paths[lang] = filename
             elif ext=='.dev':
-                surprise_paths[lang] = file
+                surprise_paths[lang] = filename
             elif ext=='.tst':
-                test_no_gold_paths[lang] = file
+                test_paths[lang] = filename
             family_name = os.path.split(family)[1]
             if lang not in lang2family: lang2family[lang] = family_name
 
+    langs = lang2family.keys()
     files_paths = {k:(develop_paths[k],surprise_paths[k],test_paths[k]) for k in langs}
     return langs, files_paths, lang2family
 

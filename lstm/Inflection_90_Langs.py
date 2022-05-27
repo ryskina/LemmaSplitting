@@ -16,43 +16,39 @@ from torch.utils.tensorboard import SummaryWriter  # to print to tensorboard
 from torchtext.legacy.data import Field, BucketIterator, TabularDataset
 from Network import Encoder, Decoder, Seq2Seq
 from utils import srcField, trgField, device, reinflection2TSV, plt, showAttention, REINFLECTION_STR, INFLECTION_STR
+
 def concat_to_file(fn, s):
     with open(fn, "a+", encoding='utf8') as f: f.write(s)
+
 total_timer = datetime.now()
 # Definition of tokenizers, Fields and device were moved to utils
 
 datafields = [("src", srcField), ("trg", trgField)]
 
 # Generate new datasets for Inflection:
-training_mode_90langs = 'FORM' # choose either 'FORM' or 'LEMMA'.
-data_dir = os.path.join('data',f'{training_mode_90langs}-SPLIT')
-tsv_dir = os.path.join('data',f'{training_mode_90langs}_TSV_FORMAT')
+training_mode = 'LEMMA' # choose either 'FORM' or 'LEMMA'.
+# data_dir = os.path.join('data',f'{training_mode}-SPLIT')
+data_dir = 'data'
+tsv_dir = f'data_{training_mode}_TSV'
 
 langs, files_paths, lang2family = get_langs_and_paths(data_dir=data_dir)
-if not os.path.exists(f'SIG20.{training_mode_90langs}'): os.mkdir(f'SIG20.{training_mode_90langs}')
+os.makedirs(f"log.SIG20/{training_mode}", exist_ok=True)
 if not os.path.exists(tsv_dir): os.mkdir(tsv_dir)
 results_df = pd.DataFrame(columns=["Family", "Language", "Accuracy", "ED"])
 
-langs1 = ['tgk', 'dje', 'mao', 'lin', 'xno', 'lud', 'zul', 'sot', 'vro', 'ceb', 'mlg', 'gmh', 'kon', 'gaa', 'izh', 'mwf', 'zpv', 'kjh', 'hil', 'gml', 'tel', 'vot', 'czn', 'ood', 'mlt', 'gsw',
-'orm', 'tgl', 'sna', 'frr', 'syc', 'xty', 'ctp', 'dak', 'liv', 'aka', 'ben', 'nya', 'cly', 'swa', 'lug', 'bod', 'kan', 'kir', 'cre', 'pus', 'lld', 'ast', 'crh', 'cpa', 'uig', 'fur', 'evn',
-'aze', 'kaz', 'azg', 'urd', 'bak']
-langs2 = ['pei', 'nno', 'vec', 'nob', 'dan', 'tuk', 'otm', 'ote', 'san', 'glg', 'frm', 'uzb', 'fas', 'est']
-langs3 = ['ang', 'hin', 'nld', 'sme', 'olo', 'mdf', 'cat', 'isl', 'swe', 'kpv', 'mhr']
-langs4 = ['myv', 'krl', 'eng', 'udm', 'vep', 'fin', 'deu']
-all_langs = [langs1, langs2, langs3, langs4]
-choice = 1
-langs = all_langs[choice-1]
-log_file = os.path.join('SIG20', training_mode_90langs, f'log_file{choice}.txt')
+langs = ['ben', 'ceb', 'hin', 'kaz', 'kir', 'mlt', 'orm', 'sna', 'swa', 'tgk', 'tgl', 'zul']
+
+log_file = f"log.SIG20/{training_mode}/log_file0.txt"
 
 for j, lang in enumerate(langs):
     lang_t0 = datetime.now()
     starter_s = f"Starting to train a new model on Language={lang}, from Family={lang2family[lang]}, at {str(datetime.now())}\n"
     concat_to_file(log_file, starter_s)
     print(starter_s)
-    outputs_dir = os.path.join('SIG20', training_mode_90langs, lang)
-    if not os.path.exists(os.path.join('SIG20', training_mode_90langs)): os.mkdir(os.path.join('SIG20', training_mode_90langs))
+    outputs_dir = f"outputs.SIG20/{training_mode}/{lang}"
+    os.makedirs(outputs_dir, exist_ok=True)
     # Add here the datasets creation, using TabularIterator (add custom functions for that)
-    train_file, test_file = reinflection2TSV(files_paths[lang], dir_name=tsv_dir, mode=INFLECTION_STR)
+    train_file, test_file = reinflection2TSV([f"{data_dir}/{fn}" for fn in files_paths[lang]], dir_name=tsv_dir, mode=INFLECTION_STR)
     train_data, test_data = TabularDataset.splits(path="", train=train_file, test=test_file, fields=datafields, format='tsv')
 
     print("- Building vocabularies")
@@ -212,4 +208,4 @@ avgAcc, avgED, medAcc, medED = np.mean(accs), np.mean(eds), np.median(accs), np.
 final_stats_s = f"avgAcc={avgAcc:.2f}, avgED={avgED:.2f}, medAcc={medAcc:.2f}, medED={medED:.2f}\n"
 concat_to_file(log_file, final_stats_s)
 print(final_stats_s)
-results_df.to_excel(f"ResultsFile{len(langs)}Langs{choice}.{training_mode_90langs}.xlsx")
+results_df.to_excel(f"ResultsFile{len(langs)}Langs{choice}.{training_mode}.xlsx")
