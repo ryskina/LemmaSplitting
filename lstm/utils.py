@@ -189,7 +189,9 @@ def reinflection2TSV(fn, dir_name="data", mode=REINFLECTION_STR):
         train_fn, test_fn = fn[0], fn[2] # file paths without parent-directories prefix
         new_train_fn = os.path.join(dir_name, os.path.basename(train_fn)+".tsv") # use the paths without parent-directories prefixes
         new_test_fn = os.path.join(dir_name, os.path.basename(test_fn)+".tsv")
-        if os.path.isfile(new_train_fn) and os.path.isfile(new_test_fn): return [new_train_fn, new_test_fn]
+
+        # Removed so that the files are overwritten each time
+        # if os.path.isfile(new_train_fn) and os.path.isfile(new_test_fn): return [new_train_fn, new_test_fn]
 
         for fn,new_fn in zip([train_fn, test_fn], [new_train_fn, new_test_fn]):
             data = open(fn, encoding='utf8').read().split('\n')
@@ -206,7 +208,7 @@ def reinflection2TSV(fn, dir_name="data", mode=REINFLECTION_STR):
         # The result is a directory "data\\LEMMA_TSV_FORMAT" with 180 files of the format 'lang.{trn|tst}.tsv'
     return new_fn
 
-def get_langs_and_paths(data_dir=''):
+def get_langs_and_paths(data_dir='', use_hall=False):
     """
     Return a list of the languages, and a dictionary of tuples: {lang: (train_path,dev_path,test_paht)}.
     :param data_dir:
@@ -222,7 +224,10 @@ def get_langs_and_paths(data_dir=''):
             lang, ext = os.path.splitext(filename)
             filename = os.path.join(family,filename)
             if ext=='.trn':
-                develop_paths[lang] = filename
+                if lang.endswith('.hall') and use_hall:
+                    develop_paths[lang[:-5]] = filename
+                if not lang.endswith('.hall') and not use_hall:
+                    develop_paths[lang] = filename
             elif ext=='.dev':
                 surprise_paths[lang] = filename
             elif ext=='.tst':
@@ -231,6 +236,7 @@ def get_langs_and_paths(data_dir=''):
             if lang not in lang2family: lang2family[lang] = family_name
 
     langs = lang2family.keys()
+    if use_hall: langs = develop_paths.keys() # not all languages have hall data
     files_paths = {k:(develop_paths[k],surprise_paths[k],test_paths[k]) for k in langs}
     return langs, files_paths, lang2family
 

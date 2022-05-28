@@ -1,4 +1,5 @@
 data_LEMMA_TSV
+data
 log.*
 outputs.*
 __pycache__
