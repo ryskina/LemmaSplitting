@@ -24,6 +24,7 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('lang', type=str, help='Language')
     parser.add_argument('--hall', action='store_true', help='Use hallucinated data')
+    parser.add_argument('--nn', action='store_true', help='Use hallucinated NN data')
     return parser.parse_args()
 
 total_timer = datetime.now()
@@ -31,13 +32,15 @@ total_timer = datetime.now()
 
 datafields = [("src", srcField), ("trg", trgField)]
 
+params = parse_args()
+
 # Generate new datasets for Inflection:
 training_mode = 'LEMMA' # choose either 'FORM' or 'LEMMA'.
 # data_dir = os.path.join('data',f'{training_mode}-SPLIT')
 data_dir = 'data'
 tsv_dir = f'data_{training_mode}_TSV'
-
-params = parse_args()
+if params.nn:
+    tsv_dir = f'data_NN_TSV'
 
 langs, files_paths, lang2family = get_langs_and_paths(data_dir=data_dir, use_hall=params.hall)
 os.makedirs(f"log.SIG20/{training_mode}", exist_ok=True)
@@ -58,7 +61,12 @@ concat_to_file(log_file, starter_s)
 print(starter_s)
 
 # Add here the datasets creation, using TabularIterator (add custom functions for that)
-train_file, test_file = reinflection2TSV([f"{data_dir}/{fn}" for fn in files_paths[lang]], dir_name=tsv_dir, mode=INFLECTION_STR)
+if not params.nn:
+    train_file, test_file = reinflection2TSV([f"{data_dir}/{fn}" for fn in files_paths[lang]], dir_name=tsv_dir, mode=INFLECTION_STR)
+else:
+    train_file = f"{tsv_dir}/{lang}.trn.tsv"
+    test_file = f"{tsv_dir}/{lang}.tst.tsv"
+
 train_data, test_data = TabularDataset.splits(path="", train=train_file, test=test_file, fields=datafields, format='tsv')
 print(f"Found training examples: {len(train_data)}")
 concat_to_file(log_file, f"Found training examples: {len(train_data)}")

@@ -223,10 +223,12 @@ def get_langs_and_paths(data_dir='', use_hall=False):
         for filename in os.listdir(os.path.join(data_dir, family)):
             lang, ext = os.path.splitext(filename)
             filename = os.path.join(family,filename)
+            hall_file = False
+            if lang.endswith('.hall'):
+                lang = lang[:-5]
+                hall_file = True
             if ext=='.trn':
-                if lang.endswith('.hall') and use_hall:
-                    develop_paths[lang[:-5]] = filename
-                if not lang.endswith('.hall') and not use_hall:
+                if hall_file == use_hall:
                     develop_paths[lang] = filename
             elif ext=='.dev':
                 surprise_paths[lang] = filename
