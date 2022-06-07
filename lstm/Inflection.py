@@ -224,9 +224,9 @@ tot_runtime_s = f'\nTotal runtime: {str(datetime.now() - total_timer)}\n'
 concat_to_file(log_file, tot_runtime_s)
 print(tot_runtime_s)
 
-accs, eds = results_df['Accuracy'], results_df['ED']
-avgAcc, avgED, medAcc, medED = np.mean(accs), np.mean(eds), np.median(accs), np.median(eds)
-final_stats_s = f"avgAcc={avgAcc:.2f}, avgED={avgED:.2f}, medAcc={medAcc:.2f}, medED={medED:.2f}\n"
-concat_to_file(log_file, final_stats_s)
-print(final_stats_s)
+# accs, eds = results_df['Accuracy'], results_df['ED']
+# avgAcc, avgED, medAcc, medED = np.mean(accs), np.mean(eds), np.median(accs), np.median(eds)
+# final_stats_s = f"avgAcc={avgAcc:.2f}, avgED={avgED:.2f}, medAcc={medAcc:.2f}, medED={medED:.2f}\n"
+# concat_to_file(log_file, final_stats_s)
+# print(final_stats_s)
 # results_df.to_excel(f"ResultsFile{len(langs)}Langs{choice}.{training_mode}.xlsx")
