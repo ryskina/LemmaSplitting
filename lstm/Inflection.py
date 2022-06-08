@@ -9,6 +9,8 @@ import os
 import pandas as pd
 import sys
 import argparse
+import itertools
+from collections import defaultdict
 
 import utils
 from utils import translate_sentence, bleu, save_checkpoint, load_checkpoint, get_langs_and_paths
@@ -25,6 +27,7 @@ def parse_args():
     parser.add_argument('lang', type=str, help='Language')
     parser.add_argument('--hall', action='store_true', help='Use hallucinated data')
     parser.add_argument('--nn', action='store_true', help='Use hallucinated NN data')
+    parser.add_argument('--agg', action='store_true', help='Precision@k aggregation at test')
     return parser.parse_args()
 
 total_timer = datetime.now()
@@ -131,6 +134,16 @@ criterion = nn.CrossEntropyLoss(ignore_index=pad_idx)
 if load_model:
     load_checkpoint(torch.load(os.path.join(outputs_dir,"my_checkpoint.pth.tar")), model, optimizer)
 
+# for Oracle 1.5: aggregating test instances with the same lemma and tags
+agg_dict = {}
+if params.agg:
+    agg_dict = defaultdict(list)
+    for i in range(len(test_data)):
+        ex = test_data.examples[i]
+        lemma = "".join([list(group) for k, group in itertools.groupby(ex.src, lambda x: x == "&") if not k][0])
+        tags = ";".join([list(group) for k, group in itertools.groupby(ex.src, lambda x: x == "$") if not k][1])
+        agg_dict[lemma + "$" + tags].append(i)
+
 random.seed(42)
 indices = random.sample(range(len(test_data)), k=10)
 accs, eds = [], []
@@ -194,7 +207,7 @@ for epoch in range(num_epochs):
         pred_print = ''.join(translated_sent)
         ed_print = utils.editDistance(trg_print, pred_print)
         print(f"{i+1}. input: {src_print} ; gold: {trg_print} ; pred: {pred_print} ; ED = {ed_print}")
-    result, accuracy = bleu(test_data, model, srcField, trgField, device, measure_str=measure_str)
+    result, accuracy = bleu(test_data, model, srcField, trgField, device, measure_str=measure_str, agg=agg_dict)
     writer.add_scalar("Test Accuracy", accuracy, global_step=epoch)
     print(f"avgED = {result}; avgAcc = {accuracy}\n")
     accs.append(accuracy)
@@ -202,7 +215,7 @@ for epoch in range(num_epochs):
 
 # running on entire test data takes a while
 # score = bleu(test_data[1:100], model, srcField, trgField, device, measure_str='ed')
-result, accuracy = bleu(test_data, model, srcField, trgField, device, measure_str=measure_str)
+result, accuracy = bleu(test_data, model, srcField, trgField, device, measure_str=measure_str, agg=agg_dict)
 lang_runtime = datetime.now() - lang_t0
 output_s = f"Results for Language={lang} from Family={lang2family[lang]}:\n {lang} {measure_str} score on test set" \
             f" is {result:.2f}.\n {lang} Average Accuracy is {accuracy*100:.2f}.\n Elapsed time is {lang_runtime}.\n\n"

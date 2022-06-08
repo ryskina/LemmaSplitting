@@ -84,7 +84,7 @@ def translate_sentence(model, sentence, german, english, device, max_length=50, 
     else:
         return translated_sentence[1:]
 
-def bleu(data, model, german, english, device, measure_str='bleu'): # measure_str can be either 'bleu' or 'ed'
+def bleu(data, model, german, english, device, measure_str='bleu', agg={}): # measure_str can be either 'bleu' or 'ed'
     targets = []
     outputs = []
 
@@ -97,15 +97,28 @@ def bleu(data, model, german, english, device, measure_str='bleu'): # measure_st
 
         targets.append([trg])
         outputs.append(prediction)
-    if measure_str==bleu:
+    if measure_str=='bleu':
         acc = "Undefined"
         res = bleu_score(outputs, targets)
     else:
         # Count also Accuracy. Ignore <eos>, obviously.
         targets = [t[0] for t in targets]
-        acc = np.array([a==b for a,b in zip(targets,outputs)]).mean()
+        # Aggregation based on edit distance
+        if agg:
+            eval_indices = []
+            for indices in agg.values():
+                ed_per_lemma = [editDistance(targets[i], outputs[i]) for i in indices]
+                best_idx = indices[np.argmin(ed_per_lemma)]
+                eval_indices.append(best_idx)
+                print("Gold:", set(["".join(targets[i]) for i in indices]))
+                print("Predictions:", set(["".join(outputs[i]) for i in indices]))
+                print("Best:", "".join(outputs[best_idx]))
+                print("----")
+        else:
+            eval_indices = range(len(targets))
+        acc = np.array([targets[i]==outputs[i] for i in eval_indices]).mean()
         # acc = (np.array(targets, dtype=object)==np.array(outputs, dtype=object)).sum()/len(data)
-        res = np.mean([editDistance(t, o) for t,o in zip(targets, outputs)])
+        res = np.mean([editDistance(targets[i], outputs[i]) for i in eval_indices])
     return res, acc
 
 def editDistDP(str1, str2, m, n):

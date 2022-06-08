@@ -1,5 +1,7 @@
 data_LEMMA_TSV
-data
+data_NN_TSV
+data/*/*.hall
+data/*/*.hall.trn
 log.*
 outputs.*
 __pycache__
