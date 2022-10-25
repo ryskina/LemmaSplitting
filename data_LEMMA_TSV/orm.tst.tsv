@@ -1,0 +1,396 @@
+n,y,a,a,$,V,PL,1,PST	n,y,a,a,n,e,e
+n,y,a,a,$,V,SG,1,PRS	n,y,a,a,c,h,a,a, ,j,i,r,a,a
+n,y,a,a,$,V,SG,2,PST	n,y,a,a,t,t,e,e
+n,y,a,a,$,V,SG,1,FUT	n,i, ,n,y,a,a,d,h,a,a
+n,y,a,a,$,V,PL,1,PRS	n,y,a,a,c,h,a,a, ,j,i,r,a,a
+n,y,a,a,$,V,FEM,SG,3,PST	n,y,a,a,t,t,e,e
+n,y,a,a,$,V,FEM,SG,3,FUT	n,i, ,n,y,a,a,t,t,i,i
+n,y,a,a,$,V,PL,2,FUT	n,i, ,n,y,a,a,t,t,u,u
+n,y,a,a,$,V,FEM,SG,3,PRS	n,y,a,a,c,h,a,a, ,j,i,r,t,i,i
+n,y,a,a,$,V,SG,2,PRS	n,y,a,a,c,h,a,a, ,j,i,r,t,a,a
+n,y,a,a,$,V,PL,3,FUT	n,i, ,n,y,a,a,t,a,n,i,i
+n,y,a,a,$,V,MASC,SG,3,PST	n,y,a,a,t,e,e
+n,y,a,a,$,V,MASC,SG,3,FUT	n,i, ,n,y,a,a,t,a,a
+n,y,a,a,$,V,NFIN	n,y,a,a,c,h,u,u
+n,y,a,a,$,V,MASC,SG,3,PRS	n,y,a,a,c,h,a,a, ,j,i,r,a,a
+n,y,a,a,$,V,PL,1,FUT	n,i, ,n,y,a,a,n,n,a,a
+n,y,a,a,$,V,SG,1,PST	n,y,a,a,d,h,e,e
+n,y,a,a,$,V,SG,2,FUT	n,i, ,n,y,a,a,t,t,a,a
+n,y,a,a,$,V,PL,2,PST	n,y,a,a,t,t,a,n,i,i
+n,y,a,a,$,V,PL,3,PST	n,y,a,a,t,a,n,i,i
+n,y,a,a,$,V,PL,3,PRS	n,y,a,a,c,h,a,a, ,j,i,r,a,n,i,i
+n,y,a,a,$,V,PL,2,PRS	n,y,a,a,c,h,a,a, ,j,i,r,t,u,u
+h,u,r,g,u,f,$,V,FEM,SG,3,FUT	n,i, ,h,u,r,g,u,f,t,t,i,i
+h,u,r,g,u,f,$,V,PL,3,PST	h,u,r,g,u,f,t,a,n,i,i
+h,u,r,g,u,f,$,V,PL,2,FUT	n,i, ,h,u,r,g,u,f,t,t,u,u
+h,u,r,g,u,f,$,V,PL,2,PST	h,u,r,g,u,f,t,t,a,n,i,i
+h,u,r,g,u,f,$,V,FEM,SG,3,PST	h,u,r,g,u,f,t,t,e,e
+h,u,r,g,u,f,$,V,PL,1,PST	h,u,r,g,u,f,n,e,e
+h,u,r,g,u,f,$,V,MASC,SG,3,FUT	n,i, ,h,u,r,g,u,f,t,a,a
+h,u,r,g,u,f,$,V,MASC,SG,3,PST	h,u,r,g,u,f,t,e,e
+h,u,r,g,u,f,$,V,PL,1,FUT	n,i, ,h,u,r,g,u,f,n,n,a,a
+h,u,r,g,u,f,$,V,SG,2,PST	h,u,r,g,u,f,t,t,e,e
+h,u,r,g,u,f,$,V,SG,2,PRS	h,u,r,g,u,f,a,a, ,j,i,r,t,a,a
+h,u,r,g,u,f,$,V,FEM,SG,3,PRS	h,u,r,g,u,f,a,a, ,j,i,r,t,i,i
+h,u,r,g,u,f,$,V,SG,1,PRS	h,u,r,g,u,f,a,a, ,j,i,r,a,a
+h,u,r,g,u,f,$,V,MASC,SG,3,PRS	h,u,r,g,u,f,a,a, ,j,i,r,a,a
+h,u,r,g,u,f,$,V,PL,2,PRS	h,u,r,g,u,f,a,a, ,j,i,r,t,u,u
+h,u,r,g,u,f,$,V,SG,2,FUT	n,i, ,h,u,r,g,u,f,t,t,a,a
+h,u,r,g,u,f,$,V,PL,3,PRS	h,u,r,g,u,f,a,a, ,j,i,r,a,n,i,i
+h,u,r,g,u,f,$,V,PL,3,FUT	n,i, ,h,u,r,g,u,f,t,a,n,i,i
+h,u,r,g,u,f,$,V,PL,1,PRS	h,u,r,g,u,f,a,a, ,j,i,r,a,a
+h,u,r,g,u,f,$,V,SG,1,PST	h,u,r,g,u,f,d,h,e,e
+h,u,r,g,u,f,$,V,NFIN	h,u,r,g,u,f,u,u
+h,u,r,g,u,f,$,V,SG,1,FUT	n,i, ,h,u,r,g,u,f,d,h,a,a
+b,a,r,a,$,V,MASC,SG,3,PST	b,a,r,a,t,e,e
+b,a,r,a,$,V,SG,2,PRS	b,a,r,a,c,h,a,a, ,j,i,r,t,a,a
+b,a,r,a,$,V,SG,1,PST	b,a,r,a,d,h,e,e
+b,a,r,a,$,V,MASC,SG,3,PRS	b,a,r,a,c,h,a,a, ,j,i,r,a,a
+b,a,r,a,$,V,PL,2,FUT	n,i, ,b,a,r,a,t,t,u,u
+b,a,r,a,$,V,PL,1,FUT	n,i, ,b,a,r,a,n,n,a,a
+b,a,r,a,$,V,FEM,SG,3,PRS	b,a,r,a,c,h,a,a, ,j,i,r,t,i,i
+b,a,r,a,$,V,PL,2,PRS	b,a,r,a,c,h,a,a, ,j,i,r,t,u,u
+b,a,r,a,$,V,PL,3,PST	b,a,r,a,t,a,n,i,i
+b,a,r,a,$,V,FEM,SG,3,FUT	n,i, ,b,a,r,a,t,t,i,i
+b,a,r,a,$,V,NFIN	b,a,r,a,c,h,u,u
+b,a,r,a,$,V,SG,2,PST	b,a,r,a,t,t,e,e
+b,a,r,a,$,V,PL,1,PST	b,a,r,a,n,e,e
+b,a,r,a,$,V,SG,1,FUT	n,i, ,b,a,r,a,d,h,a,a
+b,a,r,a,$,V,FEM,SG,3,PST	b,a,r,a,t,t,e,e
+b,a,r,a,$,V,PL,3,PRS	b,a,r,a,c,h,a,a, ,j,i,r,a,n,i,i
+b,a,r,a,$,V,PL,3,FUT	n,i, ,b,a,r,a,t,a,n,i,i
+b,a,r,a,$,V,PL,2,PST	b,a,r,a,t,t,a,n,i,i
+b,a,r,a,$,V,PL,1,PRS	b,a,r,a,c,h,a,a, ,j,i,r,a,a
+b,a,r,a,$,V,SG,2,FUT	n,i, ,b,a,r,a,t,t,a,a
+b,a,r,a,$,V,MASC,SG,3,FUT	n,i, ,b,a,r,a,t,a,a
+b,a,r,a,$,V,SG,1,PRS	b,a,r,a,c,h,a,a, ,j,i,r,a,a
+j,a,l,q,a,b,a,$,V,PL,1,FUT	n,i, ,j,a,l,q,a,b,a,n,n,a,a
+j,a,l,q,a,b,a,$,V,PL,3,PRS	j,a,l,q,a,b,a,a,a, ,j,i,r,a,n,i,i
+j,a,l,q,a,b,a,$,V,FEM,SG,3,FUT	n,i, ,j,a,l,q,a,b,a,t,t,i,i
+j,a,l,q,a,b,a,$,V,MASC,SG,3,PST	j,a,l,q,a,b,a,t,e,e
+j,a,l,q,a,b,a,$,V,MASC,SG,3,PRS	j,a,l,q,a,b,a,a,a, ,j,i,r,a,a
+j,a,l,q,a,b,a,$,V,SG,2,PST	j,a,l,q,a,b,a,t,t,e,e
+j,a,l,q,a,b,a,$,V,NFIN	j,a,l,q,a,b,a
+j,a,l,q,a,b,a,$,V,PL,3,PST	j,a,l,q,a,b,a,t,a,n,i,i
+j,a,l,q,a,b,a,$,V,FEM,SG,3,PST	j,a,l,q,a,b,a,t,t,e,e
+j,a,l,q,a,b,a,$,V,PL,3,FUT	n,i, ,j,a,l,q,a,b,a,t,a,n,i,i
+j,a,l,q,a,b,a,$,V,FEM,SG,3,PRS	j,a,l,q,a,b,a,a,a, ,j,i,r,t,i,i
+j,a,l,q,a,b,a,$,V,SG,1,FUT	n,i, ,j,a,l,q,a,b,a,d,h,a,a
+j,a,l,q,a,b,a,$,V,PL,1,PRS	j,a,l,q,a,b,a,a,a, ,j,i,r,a,a
+j,a,l,q,a,b,a,$,V,PL,2,FUT	n,i, ,j,a,l,q,a,b,a,t,t,u,u
+j,a,l,q,a,b,a,$,V,SG,2,FUT	n,i, ,j,a,l,q,a,b,a,t,t,a,a
+j,a,l,q,a,b,a,$,V,MASC,SG,3,FUT	n,i, ,j,a,l,q,a,b,a,t,a,a
+j,a,l,q,a,b,a,$,V,PL,1,PST	j,a,l,q,a,b,a,n,e,e
+j,a,l,q,a,b,a,$,V,PL,2,PRS	j,a,l,q,a,b,a,a,a, ,j,i,r,t,u,u
+j,a,l,q,a,b,a,$,V,SG,1,PRS	j,a,l,q,a,b,a,a,a, ,j,i,r,a,a
+j,a,l,q,a,b,a,$,V,SG,2,PRS	j,a,l,q,a,b,a,a,a, ,j,i,r,t,a,a
+j,a,l,q,a,b,a,$,V,SG,1,PST	j,a,l,q,a,b,a,d,h,e,e
+j,a,l,q,a,b,a,$,V,PL,2,PST	j,a,l,q,a,b,a,t,t,a,n,i,i
+h,a,a,t,$,V,PL,1,FUT	n,i, ,h,a,a,t,n,n,a,a
+h,a,a,t,$,V,SG,1,PST	h,a,a,t,d,h,e,e
+h,a,a,t,$,V,SG,1,FUT	n,i, ,h,a,a,t,d,h,a,a
+h,a,a,t,$,V,PL,1,PRS	h,a,a,t,a,a, ,j,i,r,a,a
+h,a,a,t,$,V,FEM,SG,3,FUT	n,i, ,h,a,a,t,t,t,i,i
+h,a,a,t,$,V,NFIN	h,a,a,t,u,u
+h,a,a,t,$,V,PL,2,PST	h,a,a,t,t,t,a,n,i,i
+h,a,a,t,$,V,SG,2,PRS	h,a,a,t,a,a, ,j,i,r,t,a,a
+h,a,a,t,$,V,MASC,SG,3,PST	h,a,a,t,t,e,e
+h,a,a,t,$,V,SG,1,PRS	h,a,a,t,a,a, ,j,i,r,a,a
+h,a,a,t,$,V,FEM,SG,3,PRS	h,a,a,t,a,a, ,j,i,r,t,i,i
+h,a,a,t,$,V,PL,2,PRS	h,a,a,t,a,a, ,j,i,r,t,u,u
+h,a,a,t,$,V,SG,2,FUT	n,i, ,h,a,a,t,t,t,a,a
+h,a,a,t,$,V,PL,3,FUT	n,i, ,h,a,a,t,t,a,n,i,i
+h,a,a,t,$,V,PL,3,PRS	h,a,a,t,a,a, ,j,i,r,a,n,i,i
+h,a,a,t,$,V,MASC,SG,3,PRS	h,a,a,t,a,a, ,j,i,r,a,a
+h,a,a,t,$,V,SG,2,PST	h,a,a,t,t,t,e,e
+h,a,a,t,$,V,PL,1,PST	h,a,a,t,n,e,e
+h,a,a,t,$,V,MASC,SG,3,FUT	n,i, ,h,a,a,t,t,a,a
+h,a,a,t,$,V,PL,3,PST	h,a,a,t,t,a,n,i,i
+h,a,a,t,$,V,FEM,SG,3,PST	h,a,a,t,t,t,e,e
+h,a,a,t,$,V,PL,2,FUT	n,i, ,h,a,a,t,t,t,u,u
+i,l,a,a,l,$,V,PL,1,PST	i,l,a,a,l,n,e,e
+i,l,a,a,l,$,V,MASC,SG,3,PST	i,l,a,a,l,t,e,e
+i,l,a,a,l,$,V,PL,1,PRS	i,l,a,a,l,a,a, ,j,i,r,a,a
+i,l,a,a,l,$,V,MASC,SG,3,FUT	n,i, ,i,l,a,a,l,t,a,a
+i,l,a,a,l,$,V,PL,1,FUT	n,i, ,i,l,a,a,l,n,n,a,a
+i,l,a,a,l,$,V,SG,2,FUT	n,i, ,i,l,a,a,l,t,t,a,a
+i,l,a,a,l,$,V,FEM,SG,3,PRS	i,l,a,a,l,a,a, ,j,i,r,t,i,i
+i,l,a,a,l,$,V,SG,2,PRS	i,l,a,a,l,a,a, ,j,i,r,t,a,a
+i,l,a,a,l,$,V,NFIN	i,l,a,a,l,u,u
+i,l,a,a,l,$,V,SG,1,PRS	i,l,a,a,l,a,a, ,j,i,r,a,a
+i,l,a,a,l,$,V,SG,2,PST	i,l,a,a,l,t,t,e,e
+i,l,a,a,l,$,V,SG,1,PST	i,l,a,a,l,d,h,e,e
+i,l,a,a,l,$,V,PL,3,PST	i,l,a,a,l,t,a,n,i,i
+i,l,a,a,l,$,V,MASC,SG,3,PRS	i,l,a,a,l,a,a, ,j,i,r,a,a
+i,l,a,a,l,$,V,PL,3,FUT	n,i, ,i,l,a,a,l,t,a,n,i,i
+i,l,a,a,l,$,V,FEM,SG,3,FUT	n,i, ,i,l,a,a,l,t,t,i,i
+i,l,a,a,l,$,V,PL,2,PRS	i,l,a,a,l,a,a, ,j,i,r,t,u,u
+i,l,a,a,l,$,V,PL,2,FUT	n,i, ,i,l,a,a,l,t,t,u,u
+i,l,a,a,l,$,V,SG,1,FUT	n,i, ,i,l,a,a,l,d,h,a,a
+i,l,a,a,l,$,V,FEM,SG,3,PST	i,l,a,a,l,t,t,e,e
+i,l,a,a,l,$,V,PL,2,PST	i,l,a,a,l,t,t,a,n,i,i
+i,l,a,a,l,$,V,PL,3,PRS	i,l,a,a,l,a,a, ,j,i,r,a,n,i,i
+s,i,r,b,u,$,V,SG,2,PRS	s,i,r,b,u,a,a, ,j,i,r,t,a,a
+s,i,r,b,u,$,V,FEM,SG,3,FUT	n,i, ,s,i,r,b,u,t,t,i,i
+s,i,r,b,u,$,V,PL,3,FUT	n,i, ,s,i,r,b,u,t,a,n,i,i
+s,i,r,b,u,$,V,SG,2,FUT	n,i, ,s,i,r,b,u,t,t,a,a
+s,i,r,b,u,$,V,SG,1,FUT	n,i, ,s,i,r,b,u,d,h,a,a
+s,i,r,b,u,$,V,FEM,SG,3,PRS	s,i,r,b,u,a,a, ,j,i,r,t,i,i
+s,i,r,b,u,$,V,PL,1,FUT	n,i, ,s,i,r,b,u,n,n,a,a
+s,i,r,b,u,$,V,MASC,SG,3,PRS	s,i,r,b,u,a,a, ,j,i,r,a,a
+s,i,r,b,u,$,V,FEM,SG,3,PST	s,i,r,b,u,t,t,e,e
+s,i,r,b,u,$,V,SG,1,PST	s,i,r,b,u,d,h,e,e
+s,i,r,b,u,$,V,SG,2,PST	s,i,r,b,u,t,t,e,e
+s,i,r,b,u,$,V,NFIN	s,i,r,b,u
+s,i,r,b,u,$,V,MASC,SG,3,PST	s,i,r,b,u,t,e,e
+s,i,r,b,u,$,V,PL,1,PRS	s,i,r,b,u,a,a, ,j,i,r,a,a
+s,i,r,b,u,$,V,PL,2,PST	s,i,r,b,u,t,t,a,n,i,i
+s,i,r,b,u,$,V,MASC,SG,3,FUT	n,i, ,s,i,r,b,u,t,a,a
+s,i,r,b,u,$,V,PL,3,PRS	s,i,r,b,u,a,a, ,j,i,r,a,n,i,i
+s,i,r,b,u,$,V,PL,3,PST	s,i,r,b,u,t,a,n,i,i
+s,i,r,b,u,$,V,PL,2,FUT	n,i, ,s,i,r,b,u,t,t,u,u
+s,i,r,b,u,$,V,SG,1,PRS	s,i,r,b,u,a,a, ,j,i,r,a,a
+s,i,r,b,u,$,V,PL,1,PST	s,i,r,b,u,n,e,e
+s,i,r,b,u,$,V,PL,2,PRS	s,i,r,b,u,a,a, ,j,i,r,t,u,u
+b,a,r,s,i,i,s,$,V,PL,1,PST	b,a,r,s,i,i,s,n,e,e
+b,a,r,s,i,i,s,$,V,PL,3,FUT	n,i, ,b,a,r,s,i,i,s,t,a,n,i,i
+b,a,r,s,i,i,s,$,V,MASC,SG,3,FUT	n,i, ,b,a,r,s,i,i,s,t,a,a
+b,a,r,s,i,i,s,$,V,PL,1,FUT	n,i, ,b,a,r,s,i,i,s,n,n,a,a
+b,a,r,s,i,i,s,$,V,NFIN	b,a,r,s,i,i,s,u,u
+b,a,r,s,i,i,s,$,V,FEM,SG,3,FUT	n,i, ,b,a,r,s,i,i,s,t,t,i,i
+b,a,r,s,i,i,s,$,V,MASC,SG,3,PRS	b,a,r,s,i,i,s,a,a, ,j,i,r,a,a
+b,a,r,s,i,i,s,$,V,MASC,SG,3,PST	b,a,r,s,i,i,s,t,e,e
+b,a,r,s,i,i,s,$,V,PL,2,PST	b,a,r,s,i,i,s,t,t,a,n,i,i
+b,a,r,s,i,i,s,$,V,SG,2,PST	b,a,r,s,i,i,s,t,t,e,e
+b,a,r,s,i,i,s,$,V,PL,3,PST	b,a,r,s,i,i,s,t,a,n,i,i
+b,a,r,s,i,i,s,$,V,PL,2,FUT	n,i, ,b,a,r,s,i,i,s,t,t,u,u
+b,a,r,s,i,i,s,$,V,SG,1,PRS	b,a,r,s,i,i,s,a,a, ,j,i,r,a,a
+b,a,r,s,i,i,s,$,V,SG,1,FUT	n,i, ,b,a,r,s,i,i,s,d,h,a,a
+b,a,r,s,i,i,s,$,V,PL,1,PRS	b,a,r,s,i,i,s,a,a, ,j,i,r,a,a
+b,a,r,s,i,i,s,$,V,SG,2,PRS	b,a,r,s,i,i,s,a,a, ,j,i,r,t,a,a
+b,a,r,s,i,i,s,$,V,FEM,SG,3,PRS	b,a,r,s,i,i,s,a,a, ,j,i,r,t,i,i
+b,a,r,s,i,i,s,$,V,PL,2,PRS	b,a,r,s,i,i,s,a,a, ,j,i,r,t,u,u
+b,a,r,s,i,i,s,$,V,PL,3,PRS	b,a,r,s,i,i,s,a,a, ,j,i,r,a,n,i,i
+b,a,r,s,i,i,s,$,V,FEM,SG,3,PST	b,a,r,s,i,i,s,t,t,e,e
+b,a,r,s,i,i,s,$,V,SG,2,FUT	n,i, ,b,a,r,s,i,i,s,t,t,a,a
+b,a,r,s,i,i,s,$,V,SG,1,PST	b,a,r,s,i,i,s,d,h,e,e
+f,e,d,h,a,$,V,SG,1,PST	f,e,d,h,a,d,h,e,e
+f,e,d,h,a,$,V,MASC,SG,3,PRS	f,e,d,h,a,a,a, ,j,i,r,a,a
+f,e,d,h,a,$,V,PL,3,PST	f,e,d,h,a,t,a,n,i,i
+f,e,d,h,a,$,V,MASC,SG,3,PST	f,e,d,h,a,t,e,e
+f,e,d,h,a,$,V,PL,2,PST	f,e,d,h,a,t,t,a,n,i,i
+f,e,d,h,a,$,V,SG,2,PST	f,e,d,h,a,t,t,e,e
+f,e,d,h,a,$,V,FEM,SG,3,PRS	f,e,d,h,a,a,a, ,j,i,r,t,i,i
+f,e,d,h,a,$,V,PL,2,FUT	n,i, ,f,e,d,h,a,t,t,u,u
+f,e,d,h,a,$,V,FEM,SG,3,PST	f,e,d,h,a,t,t,e,e
+f,e,d,h,a,$,V,PL,2,PRS	f,e,d,h,a,a,a, ,j,i,r,t,u,u
+f,e,d,h,a,$,V,MASC,SG,3,FUT	n,i, ,f,e,d,h,a,t,a,a
+f,e,d,h,a,$,V,PL,1,PST	f,e,d,h,a,n,e,e
+f,e,d,h,a,$,V,PL,1,PRS	f,e,d,h,a,a,a, ,j,i,r,a,a
+f,e,d,h,a,$,V,NFIN	f,e,d,h,a
+f,e,d,h,a,$,V,FEM,SG,3,FUT	n,i, ,f,e,d,h,a,t,t,i,i
+f,e,d,h,a,$,V,SG,2,PRS	f,e,d,h,a,a,a, ,j,i,r,t,a,a
+f,e,d,h,a,$,V,PL,3,PRS	f,e,d,h,a,a,a, ,j,i,r,a,n,i,i
+f,e,d,h,a,$,V,SG,1,FUT	n,i, ,f,e,d,h,a,d,h,a,a
+f,e,d,h,a,$,V,SG,2,FUT	n,i, ,f,e,d,h,a,t,t,a,a
+f,e,d,h,a,$,V,PL,3,FUT	n,i, ,f,e,d,h,a,t,a,n,i,i
+f,e,d,h,a,$,V,PL,1,FUT	n,i, ,f,e,d,h,a,n,n,a,a
+f,e,d,h,a,$,V,SG,1,PRS	f,e,d,h,a,a,a, ,j,i,r,a,a
+f,u,u,d,h,$,V,PL,2,PRS	f,u,u,d,h,a,a, ,j,i,r,t,u,u
+f,u,u,d,h,$,V,MASC,SG,3,PRS	f,u,u,d,h,a,a, ,j,i,r,a,a
+f,u,u,d,h,$,V,NFIN	f,u,u,d,h,u,u
+f,u,u,d,h,$,V,FEM,SG,3,PRS	f,u,u,d,h,a,a, ,j,i,r,t,i,i
+f,u,u,d,h,$,V,FEM,SG,3,FUT	n,i, ,f,u,u,d,h,t,t,i,i
+f,u,u,d,h,$,V,SG,2,PST	f,u,u,d,h,t,t,e,e
+f,u,u,d,h,$,V,PL,3,PST	f,u,u,d,h,t,a,n,i,i
+f,u,u,d,h,$,V,SG,2,PRS	f,u,u,d,h,a,a, ,j,i,r,t,a,a
+f,u,u,d,h,$,V,FEM,SG,3,PST	f,u,u,d,h,t,t,e,e
+f,u,u,d,h,$,V,PL,3,FUT	n,i, ,f,u,u,d,h,t,a,n,i,i
+f,u,u,d,h,$,V,SG,2,FUT	n,i, ,f,u,u,d,h,t,t,a,a
+f,u,u,d,h,$,V,MASC,SG,3,FUT	n,i, ,f,u,u,d,h,t,a,a
+f,u,u,d,h,$,V,PL,1,PST	f,u,u,d,h,n,e,e
+f,u,u,d,h,$,V,PL,1,PRS	f,u,u,d,h,a,a, ,j,i,r,a,a
+f,u,u,d,h,$,V,PL,1,FUT	n,i, ,f,u,u,d,h,n,n,a,a
+f,u,u,d,h,$,V,PL,2,FUT	n,i, ,f,u,u,d,h,t,t,u,u
+f,u,u,d,h,$,V,PL,3,PRS	f,u,u,d,h,a,a, ,j,i,r,a,n,i,i
+f,u,u,d,h,$,V,MASC,SG,3,PST	f,u,u,d,h,t,e,e
+f,u,u,d,h,$,V,PL,2,PST	f,u,u,d,h,t,t,a,n,i,i
+f,u,u,d,h,$,V,SG,1,PRS	f,u,u,d,h,a,a, ,j,i,r,a,a
+f,u,u,d,h,$,V,SG,1,FUT	n,i, ,f,u,u,d,h,d,h,a,a
+f,u,u,d,h,$,V,SG,1,PST	f,u,u,d,h,d,h,e,e
+g,u,r,g,u,r,$,V,PL,1,FUT	n,i, ,g,u,r,g,u,r,n,n,a,a
+g,u,r,g,u,r,$,V,FEM,SG,3,PRS	g,u,r,g,u,r,a,a, ,j,i,r,t,i,i
+g,u,r,g,u,r,$,V,SG,1,PRS	g,u,r,g,u,r,a,a, ,j,i,r,a,a
+g,u,r,g,u,r,$,V,PL,3,PRS	g,u,r,g,u,r,a,a, ,j,i,r,a,n,i,i
+g,u,r,g,u,r,$,V,PL,2,PRS	g,u,r,g,u,r,a,a, ,j,i,r,t,u,u
+g,u,r,g,u,r,$,V,FEM,SG,3,FUT	n,i, ,g,u,r,g,u,r,t,t,i,i
+g,u,r,g,u,r,$,V,NFIN	g,u,r,g,u,r,u,u
+g,u,r,g,u,r,$,V,MASC,SG,3,FUT	n,i, ,g,u,r,g,u,r,t,a,a
+g,u,r,g,u,r,$,V,MASC,SG,3,PRS	g,u,r,g,u,r,a,a, ,j,i,r,a,a
+g,u,r,g,u,r,$,V,FEM,SG,3,PST	g,u,r,g,u,r,t,t,e,e
+g,u,r,g,u,r,$,V,SG,2,PRS	g,u,r,g,u,r,a,a, ,j,i,r,t,a,a
+g,u,r,g,u,r,$,V,PL,3,PST	g,u,r,g,u,r,t,a,n,i,i
+g,u,r,g,u,r,$,V,SG,2,PST	g,u,r,g,u,r,t,t,e,e
+g,u,r,g,u,r,$,V,SG,1,PST	g,u,r,g,u,r,d,h,e,e
+g,u,r,g,u,r,$,V,SG,1,FUT	n,i, ,g,u,r,g,u,r,d,h,a,a
+g,u,r,g,u,r,$,V,PL,3,FUT	n,i, ,g,u,r,g,u,r,t,a,n,i,i
+g,u,r,g,u,r,$,V,PL,2,PST	g,u,r,g,u,r,t,t,a,n,i,i
+g,u,r,g,u,r,$,V,PL,2,FUT	n,i, ,g,u,r,g,u,r,t,t,u,u
+g,u,r,g,u,r,$,V,PL,1,PRS	g,u,r,g,u,r,a,a, ,j,i,r,a,a
+g,u,r,g,u,r,$,V,MASC,SG,3,PST	g,u,r,g,u,r,t,e,e
+g,u,r,g,u,r,$,V,SG,2,FUT	n,i, ,g,u,r,g,u,r,t,t,a,a
+g,u,r,g,u,r,$,V,PL,1,PST	g,u,r,g,u,r,n,e,e
+d,h,a,n,d,h,a,m,$,V,PL,3,PST	d,h,a,n,d,h,a,m,t,a,n,i,i
+d,h,a,n,d,h,a,m,$,V,MASC,SG,3,FUT	n,i, ,d,h,a,n,d,h,a,m,t,a,a
+d,h,a,n,d,h,a,m,$,V,SG,1,PST	d,h,a,n,d,h,a,m,d,h,e,e
+d,h,a,n,d,h,a,m,$,V,NFIN	d,h,a,n,d,h,a,m,u,u
+d,h,a,n,d,h,a,m,$,V,SG,1,PRS	d,h,a,n,d,h,a,m,a,a, ,j,i,r,a,a
+d,h,a,n,d,h,a,m,$,V,SG,1,FUT	n,i, ,d,h,a,n,d,h,a,m,d,h,a,a
+d,h,a,n,d,h,a,m,$,V,MASC,SG,3,PST	d,h,a,n,d,h,a,m,t,e,e
+d,h,a,n,d,h,a,m,$,V,PL,3,FUT	n,i, ,d,h,a,n,d,h,a,m,t,a,n,i,i
+d,h,a,n,d,h,a,m,$,V,PL,1,PRS	d,h,a,n,d,h,a,m,a,a, ,j,i,r,a,a
+d,h,a,n,d,h,a,m,$,V,PL,1,PST	d,h,a,n,d,h,a,m,n,e,e
+d,h,a,n,d,h,a,m,$,V,PL,1,FUT	n,i, ,d,h,a,n,d,h,a,m,n,n,a,a
+d,h,a,n,d,h,a,m,$,V,FEM,SG,3,FUT	n,i, ,d,h,a,n,d,h,a,m,t,t,i,i
+d,h,a,n,d,h,a,m,$,V,FEM,SG,3,PRS	d,h,a,n,d,h,a,m,a,a, ,j,i,r,t,i,i
+d,h,a,n,d,h,a,m,$,V,MASC,SG,3,PRS	d,h,a,n,d,h,a,m,a,a, ,j,i,r,a,a
+d,h,a,n,d,h,a,m,$,V,FEM,SG,3,PST	d,h,a,n,d,h,a,m,t,t,e,e
+d,h,a,n,d,h,a,m,$,V,SG,2,PRS	d,h,a,n,d,h,a,m,a,a, ,j,i,r,t,a,a
+d,h,a,n,d,h,a,m,$,V,PL,3,PRS	d,h,a,n,d,h,a,m,a,a, ,j,i,r,a,n,i,i
+d,h,a,n,d,h,a,m,$,V,SG,2,FUT	n,i, ,d,h,a,n,d,h,a,m,t,t,a,a
+d,h,a,n,d,h,a,m,$,V,PL,2,FUT	n,i, ,d,h,a,n,d,h,a,m,t,t,u,u
+d,h,a,n,d,h,a,m,$,V,SG,2,PST	d,h,a,n,d,h,a,m,t,t,e,e
+d,h,a,n,d,h,a,m,$,V,PL,2,PRS	d,h,a,n,d,h,a,m,a,a, ,j,i,r,t,u,u
+d,h,a,n,d,h,a,m,$,V,PL,2,PST	d,h,a,n,d,h,a,m,t,t,a,n,i,i
+a,m,a,n,$,V,SG,2,PST	a,m,a,n,t,t,e,e
+a,m,a,n,$,V,PL,1,PST	a,m,a,n,n,e,e
+a,m,a,n,$,V,MASC,SG,3,PRS	a,m,a,n,a,a, ,j,i,r,a,a
+a,m,a,n,$,V,PL,2,FUT	n,i, ,a,m,a,n,t,t,u,u
+a,m,a,n,$,V,FEM,SG,3,FUT	n,i, ,a,m,a,n,t,t,i,i
+a,m,a,n,$,V,SG,2,FUT	n,i, ,a,m,a,n,t,t,a,a
+a,m,a,n,$,V,NFIN	a,m,a,n,u,u
+a,m,a,n,$,V,PL,1,PRS	a,m,a,n,a,a, ,j,i,r,a,a
+a,m,a,n,$,V,PL,2,PST	a,m,a,n,t,t,a,n,i,i
+a,m,a,n,$,V,FEM,SG,3,PST	a,m,a,n,t,t,e,e
+a,m,a,n,$,V,MASC,SG,3,PST	a,m,a,n,t,e,e
+a,m,a,n,$,V,PL,1,FUT	n,i, ,a,m,a,n,n,n,a,a
+a,m,a,n,$,V,PL,3,FUT	n,i, ,a,m,a,n,t,a,n,i,i
+a,m,a,n,$,V,MASC,SG,3,FUT	n,i, ,a,m,a,n,t,a,a
+a,m,a,n,$,V,PL,2,PRS	a,m,a,n,a,a, ,j,i,r,t,u,u
+a,m,a,n,$,V,SG,1,PRS	a,m,a,n,a,a, ,j,i,r,a,a
+a,m,a,n,$,V,SG,2,PRS	a,m,a,n,a,a, ,j,i,r,t,a,a
+a,m,a,n,$,V,FEM,SG,3,PRS	a,m,a,n,a,a, ,j,i,r,t,i,i
+a,m,a,n,$,V,SG,1,PST	a,m,a,n,d,h,e,e
+a,m,a,n,$,V,PL,3,PST	a,m,a,n,t,a,n,i,i
+a,m,a,n,$,V,SG,1,FUT	n,i, ,a,m,a,n,d,h,a,a
+a,m,a,n,$,V,PL,3,PRS	a,m,a,n,a,a, ,j,i,r,a,n,i,i
+j,a,a,l,a,l,a,$,V,SG,2,PRS	j,a,a,l,a,l,a,a,a, ,j,i,r,t,a,a
+j,a,a,l,a,l,a,$,V,PL,1,PST	j,a,a,l,a,l,a,n,e,e
+j,a,a,l,a,l,a,$,V,PL,3,PRS	j,a,a,l,a,l,a,a,a, ,j,i,r,a,n,i,i
+j,a,a,l,a,l,a,$,V,SG,1,PRS	j,a,a,l,a,l,a,a,a, ,j,i,r,a,a
+j,a,a,l,a,l,a,$,V,PL,2,PST	j,a,a,l,a,l,a,t,t,a,n,i,i
+j,a,a,l,a,l,a,$,V,PL,3,PST	j,a,a,l,a,l,a,t,a,n,i,i
+j,a,a,l,a,l,a,$,V,NFIN	j,a,a,l,a,l,a
+j,a,a,l,a,l,a,$,V,FEM,SG,3,PST	j,a,a,l,a,l,a,t,t,e,e
+j,a,a,l,a,l,a,$,V,MASC,SG,3,PST	j,a,a,l,a,l,a,t,e,e
+j,a,a,l,a,l,a,$,V,PL,2,FUT	n,i, ,j,a,a,l,a,l,a,t,t,u,u
+j,a,a,l,a,l,a,$,V,PL,1,FUT	n,i, ,j,a,a,l,a,l,a,n,n,a,a
+j,a,a,l,a,l,a,$,V,PL,2,PRS	j,a,a,l,a,l,a,a,a, ,j,i,r,t,u,u
+j,a,a,l,a,l,a,$,V,SG,1,PST	j,a,a,l,a,l,a,d,h,e,e
+j,a,a,l,a,l,a,$,V,SG,1,FUT	n,i, ,j,a,a,l,a,l,a,d,h,a,a
+j,a,a,l,a,l,a,$,V,PL,3,FUT	n,i, ,j,a,a,l,a,l,a,t,a,n,i,i
+j,a,a,l,a,l,a,$,V,SG,2,PST	j,a,a,l,a,l,a,t,t,e,e
+j,a,a,l,a,l,a,$,V,FEM,SG,3,PRS	j,a,a,l,a,l,a,a,a, ,j,i,r,t,i,i
+j,a,a,l,a,l,a,$,V,SG,2,FUT	n,i, ,j,a,a,l,a,l,a,t,t,a,a
+j,a,a,l,a,l,a,$,V,FEM,SG,3,FUT	n,i, ,j,a,a,l,a,l,a,t,t,i,i
+j,a,a,l,a,l,a,$,V,PL,1,PRS	j,a,a,l,a,l,a,a,a, ,j,i,r,a,a
+j,a,a,l,a,l,a,$,V,MASC,SG,3,PRS	j,a,a,l,a,l,a,a,a, ,j,i,r,a,a
+j,a,a,l,a,l,a,$,V,MASC,SG,3,FUT	n,i, ,j,a,a,l,a,l,a,t,a,a
+d,e,e,m,a,a,$,V,SG,1,FUT	n,i, ,d,e,e,m,a,a,d,h,a,a
+d,e,e,m,a,a,$,V,PL,2,PST	d,e,e,m,a,a,t,t,a,n,i,i
+d,e,e,m,a,a,$,V,PL,1,PRS	d,e,e,m,a,a,a,a, ,j,i,r,a,a
+d,e,e,m,a,a,$,V,PL,3,PST	d,e,e,m,a,a,t,a,n,i,i
+d,e,e,m,a,a,$,V,MASC,SG,3,PST	d,e,e,m,a,a,t,e,e
+d,e,e,m,a,a,$,V,SG,1,PST	d,e,e,m,a,a,d,h,e,e
+d,e,e,m,a,a,$,V,PL,3,PRS	d,e,e,m,a,a,a,a, ,j,i,r,a,n,i,i
+d,e,e,m,a,a,$,V,FEM,SG,3,PRS	d,e,e,m,a,a,a,a, ,j,i,r,t,i,i
+d,e,e,m,a,a,$,V,MASC,SG,3,PRS	d,e,e,m,a,a,a,a, ,j,i,r,a,a
+d,e,e,m,a,a,$,V,FEM,SG,3,FUT	n,i, ,d,e,e,m,a,a,t,t,i,i
+d,e,e,m,a,a,$,V,SG,2,FUT	n,i, ,d,e,e,m,a,a,t,t,a,a
+d,e,e,m,a,a,$,V,SG,2,PST	d,e,e,m,a,a,t,t,e,e
+d,e,e,m,a,a,$,V,FEM,SG,3,PST	d,e,e,m,a,a,t,t,e,e
+d,e,e,m,a,a,$,V,NFIN	d,e,e,m,a,a
+d,e,e,m,a,a,$,V,PL,1,FUT	n,i, ,d,e,e,m,a,a,n,n,a,a
+d,e,e,m,a,a,$,V,PL,3,FUT	n,i, ,d,e,e,m,a,a,t,a,n,i,i
+d,e,e,m,a,a,$,V,PL,1,PST	d,e,e,m,a,a,n,e,e
+d,e,e,m,a,a,$,V,PL,2,PRS	d,e,e,m,a,a,a,a, ,j,i,r,t,u,u
+d,e,e,m,a,a,$,V,SG,1,PRS	d,e,e,m,a,a,a,a, ,j,i,r,a,a
+d,e,e,m,a,a,$,V,PL,2,FUT	n,i, ,d,e,e,m,a,a,t,t,u,u
+d,e,e,m,a,a,$,V,MASC,SG,3,FUT	n,i, ,d,e,e,m,a,a,t,a,a
+d,e,e,m,a,a,$,V,SG,2,PRS	d,e,e,m,a,a,a,a, ,j,i,r,t,a,a
+d,u,b,b,i,s,$,V,PL,2,PRS	d,u,b,b,i,s,a,a, ,j,i,r,t,u,u
+d,u,b,b,i,s,$,V,MASC,SG,3,FUT	n,i, ,d,u,b,b,i,s,t,a,a
+d,u,b,b,i,s,$,V,SG,2,FUT	n,i, ,d,u,b,b,i,s,t,t,a,a
+d,u,b,b,i,s,$,V,MASC,SG,3,PRS	d,u,b,b,i,s,a,a, ,j,i,r,a,a
+d,u,b,b,i,s,$,V,PL,2,PST	d,u,b,b,i,s,t,t,a,n,i,i
+d,u,b,b,i,s,$,V,PL,3,PST	d,u,b,b,i,s,t,a,n,i,i
+d,u,b,b,i,s,$,V,PL,1,PST	d,u,b,b,i,s,n,e,e
+d,u,b,b,i,s,$,V,FEM,SG,3,PST	d,u,b,b,i,s,t,t,e,e
+d,u,b,b,i,s,$,V,PL,1,FUT	n,i, ,d,u,b,b,i,s,n,n,a,a
+d,u,b,b,i,s,$,V,SG,1,PST	d,u,b,b,i,s,d,h,e,e
+d,u,b,b,i,s,$,V,PL,3,FUT	n,i, ,d,u,b,b,i,s,t,a,n,i,i
+d,u,b,b,i,s,$,V,NFIN	d,u,b,b,i,s,u,u
+d,u,b,b,i,s,$,V,SG,2,PST	d,u,b,b,i,s,t,t,e,e
+d,u,b,b,i,s,$,V,SG,1,FUT	n,i, ,d,u,b,b,i,s,d,h,a,a
+d,u,b,b,i,s,$,V,PL,2,FUT	n,i, ,d,u,b,b,i,s,t,t,u,u
+d,u,b,b,i,s,$,V,MASC,SG,3,PST	d,u,b,b,i,s,t,e,e
+d,u,b,b,i,s,$,V,FEM,SG,3,FUT	n,i, ,d,u,b,b,i,s,t,t,i,i
+d,u,b,b,i,s,$,V,PL,1,PRS	d,u,b,b,i,s,a,a, ,j,i,r,a,a
+d,u,b,b,i,s,$,V,PL,3,PRS	d,u,b,b,i,s,a,a, ,j,i,r,a,n,i,i
+d,u,b,b,i,s,$,V,FEM,SG,3,PRS	d,u,b,b,i,s,a,a, ,j,i,r,t,i,i
+d,u,b,b,i,s,$,V,SG,1,PRS	d,u,b,b,i,s,a,a, ,j,i,r,a,a
+d,u,b,b,i,s,$,V,SG,2,PRS	d,u,b,b,i,s,a,a, ,j,i,r,t,a,a
+b,i,l,c,h,e,e,s,s,$,V,PL,3,PRS	b,i,l,c,h,e,e,s,s,a,a, ,j,i,r,a,n,i,i
+b,i,l,c,h,e,e,s,s,$,V,SG,1,PRS	b,i,l,c,h,e,e,s,s,a,a, ,j,i,r,a,a
+b,i,l,c,h,e,e,s,s,$,V,PL,3,PST	b,i,l,c,h,e,e,s,s,t,a,n,i,i
+b,i,l,c,h,e,e,s,s,$,V,SG,2,PST	b,i,l,c,h,e,e,s,s,t,t,e,e
+b,i,l,c,h,e,e,s,s,$,V,SG,2,PRS	b,i,l,c,h,e,e,s,s,a,a, ,j,i,r,t,a,a
+b,i,l,c,h,e,e,s,s,$,V,MASC,SG,3,PRS	b,i,l,c,h,e,e,s,s,a,a, ,j,i,r,a,a
+b,i,l,c,h,e,e,s,s,$,V,PL,1,PRS	b,i,l,c,h,e,e,s,s,a,a, ,j,i,r,a,a
+b,i,l,c,h,e,e,s,s,$,V,SG,1,FUT	n,i, ,b,i,l,c,h,e,e,s,s,d,h,a,a
+b,i,l,c,h,e,e,s,s,$,V,SG,2,FUT	n,i, ,b,i,l,c,h,e,e,s,s,t,t,a,a
+b,i,l,c,h,e,e,s,s,$,V,FEM,SG,3,PST	b,i,l,c,h,e,e,s,s,t,t,e,e
+b,i,l,c,h,e,e,s,s,$,V,MASC,SG,3,PST	b,i,l,c,h,e,e,s,s,t,e,e
+b,i,l,c,h,e,e,s,s,$,V,PL,1,FUT	n,i, ,b,i,l,c,h,e,e,s,s,n,n,a,a
+b,i,l,c,h,e,e,s,s,$,V,FEM,SG,3,FUT	n,i, ,b,i,l,c,h,e,e,s,s,t,t,i,i
+b,i,l,c,h,e,e,s,s,$,V,PL,2,FUT	n,i, ,b,i,l,c,h,e,e,s,s,t,t,u,u
+b,i,l,c,h,e,e,s,s,$,V,NFIN	b,i,l,c,h,e,e,s,s,u,u
+b,i,l,c,h,e,e,s,s,$,V,FEM,SG,3,PRS	b,i,l,c,h,e,e,s,s,a,a, ,j,i,r,t,i,i
+b,i,l,c,h,e,e,s,s,$,V,MASC,SG,3,FUT	n,i, ,b,i,l,c,h,e,e,s,s,t,a,a
+b,i,l,c,h,e,e,s,s,$,V,PL,2,PRS	b,i,l,c,h,e,e,s,s,a,a, ,j,i,r,t,u,u
+b,i,l,c,h,e,e,s,s,$,V,PL,1,PST	b,i,l,c,h,e,e,s,s,n,e,e
+b,i,l,c,h,e,e,s,s,$,V,SG,1,PST	b,i,l,c,h,e,e,s,s,d,h,e,e
+b,i,l,c,h,e,e,s,s,$,V,PL,3,FUT	n,i, ,b,i,l,c,h,e,e,s,s,t,a,n,i,i
+b,i,l,c,h,e,e,s,s,$,V,PL,2,PST	b,i,l,c,h,e,e,s,s,t,t,a,n,i,i
+i,j,a,a,r,$,V,FEM,SG,3,PRS	i,j,a,a,r,a,a, ,j,i,r,t,i,i
+i,j,a,a,r,$,V,SG,2,PST	i,j,a,a,r,t,t,e,e
+i,j,a,a,r,$,V,FEM,SG,3,PST	i,j,a,a,r,t,t,e,e
+i,j,a,a,r,$,V,PL,1,FUT	n,i, ,i,j,a,a,r,n,n,a,a
+i,j,a,a,r,$,V,NFIN	i,j,a,a,r,u,u
+i,j,a,a,r,$,V,PL,1,PRS	i,j,a,a,r,a,a, ,j,i,r,a,a
+i,j,a,a,r,$,V,MASC,SG,3,FUT	n,i, ,i,j,a,a,r,t,a,a
+i,j,a,a,r,$,V,MASC,SG,3,PST	i,j,a,a,r,t,e,e
+i,j,a,a,r,$,V,PL,1,PST	i,j,a,a,r,n,e,e
+i,j,a,a,r,$,V,PL,3,FUT	n,i, ,i,j,a,a,r,t,a,n,i,i
+i,j,a,a,r,$,V,FEM,SG,3,FUT	n,i, ,i,j,a,a,r,t,t,i,i
+i,j,a,a,r,$,V,PL,3,PRS	i,j,a,a,r,a,a, ,j,i,r,a,n,i,i
+i,j,a,a,r,$,V,SG,1,PST	i,j,a,a,r,d,h,e,e
+i,j,a,a,r,$,V,SG,1,PRS	i,j,a,a,r,a,a, ,j,i,r,a,a
+i,j,a,a,r,$,V,SG,2,PRS	i,j,a,a,r,a,a, ,j,i,r,t,a,a
+i,j,a,a,r,$,V,PL,3,PST	i,j,a,a,r,t,a,n,i,i
+i,j,a,a,r,$,V,SG,1,FUT	n,i, ,i,j,a,a,r,d,h,a,a
+i,j,a,a,r,$,V,MASC,SG,3,PRS	i,j,a,a,r,a,a, ,j,i,r,a,a
+i,j,a,a,r,$,V,SG,2,FUT	n,i, ,i,j,a,a,r,t,t,a,a
+i,j,a,a,r,$,V,PL,2,PRS	i,j,a,a,r,a,a, ,j,i,r,t,u,u
+i,j,a,a,r,$,V,PL,2,PST	i,j,a,a,r,t,t,a,n,i,i
+i,j,a,a,r,$,V,PL,2,FUT	n,i, ,i,j,a,a,r,t,t,u,u

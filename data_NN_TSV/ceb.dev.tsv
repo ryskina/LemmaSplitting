@@ -1,0 +1,61 @@
+m,a,t,u,l,o,g,&,m,a,h,u,l,o,g,#,n,a,g,h,u,l,o,g,$,V,PRS	n,a,t,u,l,o,g
+m,a,t,u,l,o,g,&,m,a,h,u,l,o,g,#,m,a,h,u,l,o,g,$,V,NFIN	m,a,t,u,l,o,g
+m,a,t,u,l,o,g,&,m,a,h,u,l,o,g,#,n,a,h,u,l,o,g,$,V,PRF,PST	n,a,k,a,t,u,l,o,g
+m,a,t,u,l,o,g,&,m,a,h,u,l,o,g,#,n,i,n,g,h,u,l,o,g,$,V,PROG,PRS	n,a,t,u,l,o,g
+m,a,t,u,l,o,g,&,m,a,h,u,l,o,g,#,m,a,h,u,l,o,g,$,V,FUT	m,a,t,u,l,o,g
+m,a,t,u,l,o,g,&,m,a,h,u,l,o,g,#,n,a,h,u,l,o,g,$,V,PST	n,a,t,u,l,o,g
+m,a,k,a,l,i,m,o,t,&,m,o,p,a,l,i,t,#,m,o,p,a,l,i,t,$,V,FUT	m,o,k,a,l,i,m,o,t
+m,a,k,a,l,i,m,o,t,&,m,o,p,a,l,i,t,#,n,i,n,g,p,a,l,i,t,$,V,PROG,PRS	n,i,n,g,k,a,l,i,m,o,t
+m,a,k,a,l,i,m,o,t,&,m,o,p,a,l,i,t,#,n,i,p,a,l,i,t,$,V,PST	n,a,k,a,l,i,m,o,t
+m,a,k,a,l,i,m,o,t,&,m,o,p,a,l,i,t,#,n,a,g,p,a,l,i,t,$,V,PRS	n,a,g,k,a,l,i,m,o,t
+m,a,k,a,l,i,m,o,t,&,m,o,p,a,l,i,t,#,n,a,k,a,p,a,l,i,t,$,V,PRF,PST	n,a,k,a,l,i,m,o,t
+m,a,k,a,l,i,m,o,t,&,m,o,p,a,l,i,t,#,m,o,p,a,l,i,t,$,V,NFIN	m,a,k,a,l,i,m,o,t
+m,a,g,a,n,a,h,a,n,&,m,a,w,a,d,-,a,n,#,n,a,w,a,d,-,a,n,$,V,PST	n,a,g,a,n,a,h,a,n
+m,a,g,a,n,a,h,a,n,&,m,a,p,a,e,a,a,n,#,n,a,p,a,e,a,a,n,$,V,PROG,PRS	g,i,g,a,n,a,h,a,n
+m,a,g,a,n,a,h,a,n,&,m,a,w,a,n,-,a,n,#,n,a,w,a,n,-,a,n,$,V,PRS	g,i,g,a,n,a,h,a,n
+m,a,g,a,n,a,h,a,n,&,m,a,w,a,d,-,a,n,#,m,a,w,a,d,-,a,n,$,V,NFIN	m,a,g,a,n,a,h,a,n
+m,a,g,a,n,a,h,a,n,&,m,a,w,a,d,-,a,n,#,m,a,w,a,d,-,a,n,$,V,FUT	m,a,g,a,n,a,h,a,n
+m,a,g,a,n,a,h,a,n,&,m,a,w,a,a,-,a,n,#,n,a,w,a,a,-,a,n,$,V,PRF,PST	n,a,g,a,n,a,h,a,n
+m,a,k,a,b,a,n,t,a,y,&,m,a,m,a,t,a,y,#,n,a,m,a,t,a,y,$,V,PRS	n,a,k,a,b,a,n,t,a,y
+m,a,k,a,b,a,n,t,a,y,&,m,a,m,a,t,a,y,#,n,a,m,a,t,a,y,$,V,PST	n,a,k,a,b,a,n,t,a,y
+m,a,k,a,b,a,n,t,a,y,&,m,a,k,a,t,a,y,#,m,a,k,a,t,a,y,$,V,FUT	m,a,k,a,b,a,n,t,a,y
+m,a,k,a,b,a,n,t,a,y,&,m,a,m,a,t,a,y,#,n,a,m,a,t,a,y,$,V,PRF,PST	n,a,k,a,b,a,n,t,a,y
+m,a,k,a,b,a,n,t,a,y,&,m,a,b,a,t,a,y,#,n,a,b,a,t,a,y,$,V,PROG,PRS	n,a,k,a,b,a,n,t,a,y
+m,a,k,a,b,a,n,t,a,y,&,m,a,m,a,t,a,y,#,m,a,m,a,t,a,y,$,V,NFIN	m,a,k,a,b,a,n,t,a,y
+m,o,h,i,m,o,&,m,o,a,i,t,o,#,n,i,a,i,t,o,$,V,PST	n,a,k,a,y,a
+m,o,h,i,m,o,&,m,o,h,i,r,a,#,m,o,h,i,r,a,$,V,FUT	m,a,k,a,y,a
+m,o,h,i,m,o,&,m,o,h,i,o,n,#,n,a,k,a,h,i,o,n,$,V,PRF,PST	n,a,k,a,y,a
+m,o,h,i,m,o,&,m,o,h,l,m,o,n,#,m,o,h,l,m,o,n,$,V,NFIN	m,o,h,i,m,o
+m,o,h,i,m,o,&,m,o,h,m,i,m,u,#,n,i,n,g,h,m,i,m,u,$,V,PROG,PRS	k,a,y,a
+m,o,h,i,m,o,&,m,o,s,i,n,o,#,n,a,g,s,i,n,o,$,V,PRS	k,a,y,a
+m,o,b,u,h,a,t,&,m,o,s,u,l,a,t,#,m,o,s,u,l,a,t,$,V,FUT	m,o,b,u,h,a,t
+m,o,b,u,h,a,t,&,m,o,s,u,h,a,t,#,n,a,g,s,u,h,a,t,$,V,PRS	n,a,g,b,u,h,a,t
+m,o,b,u,h,a,t,&,m,o,s,u,l,a,t,#,n,a,s,u,l,a,t,$,V,PRF,PST	n,a,b,u,h,a,t
+m,o,b,u,h,a,t,&,m,o,d,u,h,a,t,#,m,o,d,u,h,a,t,$,V,NFIN	m,o,b,u,h,a,t
+m,o,b,u,h,a,t,&,m,o,s,u,l,a,t,#,n,i,s,u,l,a,t,$,V,PST	n,i,b,u,h,a,t
+m,o,b,u,h,a,t,&,m,o,s,u,l,a,t,#,n,i,n,g,s,u,l,a,t,$,V,PROG,PRS	n,i,n,g,b,u,h,a,t
+m,a,h,i,m,o, ,n,g,a,&,m,a,k,a,h,i,m,o, ,s,a,#,n,a,k,a,h,i,m,o, ,s,a,$,V,PRS	n,a,h,i,m,o, ,n,g,a
+m,a,h,i,m,o, ,n,g,a,&,m,a,k,a,h,i,m,o, ,s,a,#,n,a,k,a,h,i,m,o, ,s,a,$,V,PST	n,i,h,i,m,o, ,n,g,a
+m,a,h,i,m,o, ,n,g,a,&,m,a,k,a,h,i,m,o, ,s,a,#,m,a,k,a,h,i,m,o, ,s,a,$,V,NFIN	m,a,h,i,m,o, ,n,g,a
+m,a,h,i,m,o, ,n,g,a,&,m,a,k,a,h,i,m,o, ,s,a,#,n,a,k,a,h,i,m,o, ,s,a,$,V,PROG,PRS	n,i,n,g,h,i,m,o, ,n,g,a
+m,a,h,i,m,o, ,n,g,a,&,m,a,k,a,h,i,m,o, ,s,a,#,m,a,k,a,h,i,m,o, ,s,a,$,V,FUT	m,a,h,i,m,o, ,n,g,a
+m,a,h,i,m,o, ,n,g,a,&,m,a,k,a,h,i,m,o, ,s,a,#,n,a,k,a,h,i,m,o, ,s,a,$,V,PRF,PST	n,a,h,i,m,o, ,n,g,a
+m,a,h,i,m,o, ,n,g,a,&,m,a,k,a,h,i,m,o, ,s,a,#,n,a,k,a,h,i,m,o, ,s,a,$,V,PST	n,a,h,i,m,o, ,n,g,a
+m,o,b,u,t,a,n,g,&,m,o,b,u,a,k,#,n,a,g,b,u,a,k,$,V,PRS	n,a,g,b,u,t,a,n,g
+m,o,b,u,t,a,n,g,&,m,o,b,u,a,k,#,m,o,b,u,a,k,$,V,FUT	m,o,b,u,t,a,n,g
+m,o,b,u,t,a,n,g,&,m,o,b,u,a,k,#,n,i,b,u,a,k,$,V,PST	n,i,b,u,t,a,n,g
+m,o,b,u,t,a,n,g,&,m,o,b,u,a,k,#,n,i,n,g,b,u,a,k,$,V,PROG,PRS	n,i,n,g,b,u,t,a,n,g
+m,o,b,u,t,a,n,g,&,m,o,b,u,a,k,#,n,a,b,u,a,k,$,V,PRF,PST	n,a,b,u,t,a,n,g
+m,o,b,u,t,a,n,g,&,m,o,b,u,a,k,#,m,o,b,u,a,k,$,V,NFIN	m,o,b,u,t,a,n,g
+m,a,s,a,y,o,d,&,m,o,s,u,y,o,d,#,n,a,g,s,u,y,o,d,$,V,PRS	n,a,s,a,y,o,d
+m,a,s,a,y,o,d,&,m,e,s,a,r,o,d,#,m,e,s,a,r,o,d,$,V,FUT	m,a,s,a,y,o,d
+m,a,s,a,y,o,d,&,m,o,s,a,b,o,d,#,n,i,n,g,s,a,b,o,d,$,V,PROG,PRS	n,a,s,a,y,o,d
+m,a,s,a,y,o,d,&,m,o,s,a,b,o,t,#,n,a,s,a,b,o,t,$,V,PRF,PST	n,a,s,a,y,r,a,n
+m,a,s,a,y,o,d,&,m,o,s,p,y,o,d,#,n,i,s,p,y,o,d,$,V,PST	n,a,s,a,y,o,d
+m,a,s,a,y,o,d,&,m,o,s,a,b,o,t,#,m,o,s,a,b,o,t,$,V,NFIN	m,a,s,a,y,o,d
+m,o,t,r,a,b,a,h,o,&,m,o,t,r,b,a,o,#,n,i,n,g,t,r,b,a,o,$,V,PROG,PRS	n,i,n,g,t,r,a,b,a,h,o
+m,o,t,r,a,b,a,h,o,&,m,o,m,a,b,k,h,o,#,n,a,g,m,a,b,k,h,o,$,V,PRS	n,a,g,t,r,a,b,a,h,o
+m,o,t,r,a,b,a,h,o,&,m,o,m,a,b,u,h,o,#,n,i,m,a,b,u,h,o,$,V,PST	n,i,t,r,a,b,a,h,o
+m,o,t,r,a,b,a,h,o,&,m,o,t,a,w,a,g,#,n,a,t,a,w,a,g,$,V,PRF,PST	n,a,t,r,a,b,a,h,o
+m,o,t,r,a,b,a,h,o,&,m,o,t,e,b,h,o,#,m,o,t,e,b,h,o,$,V,FUT	m,o,t,r,a,b,a,h,o
+m,o,t,r,a,b,a,h,o,&,m,o,t,a,n,i,h,o,#,m,o,t,a,n,i,h,o,$,V,NFIN	m,o,t,r,a,b,a,h,o
