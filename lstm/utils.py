@@ -186,7 +186,7 @@ def reinflection2TSV(fn, dir_name="data", mode=REINFLECTION_STR):
     if mode==REINFLECTION_STR:
         fn = os.path.join(dir_name,fn)
         fn_wo_ext = os.path.splitext(fn)[0]
-        new_fn = fn_wo_ext+".tsv"
+        new_fn = fn_wo_ext + ".tsv"
 
         data = open(fn, encoding='utf8').read().split('\n')
         data = [line.split('\t') for line in data]
@@ -199,14 +199,15 @@ def reinflection2TSV(fn, dir_name="data", mode=REINFLECTION_STR):
 
         open(new_fn, mode='w', encoding='utf8').write('\n'.join(examples))
     else:
-        train_fn, test_fn = fn[0], fn[2] # file paths without parent-directories prefix
+        train_fn, dev_fn, test_fn = fn # file paths without parent-directories prefix
         new_train_fn = os.path.join(dir_name, os.path.basename(train_fn)+".tsv") # use the paths without parent-directories prefixes
+        new_dev_fn = os.path.join(dir_name, os.path.basename(dev_fn)+".tsv")
         new_test_fn = os.path.join(dir_name, os.path.basename(test_fn)+".tsv")
 
         # Removed so that the files are overwritten each time
         # if os.path.isfile(new_train_fn) and os.path.isfile(new_test_fn): return [new_train_fn, new_test_fn]
 
-        for fn,new_fn in zip([train_fn, test_fn], [new_train_fn, new_test_fn]):
+        for fn,new_fn in zip([train_fn, test_fn, dev_fn], [new_train_fn, new_test_fn, new_dev_fn]):
             data = open(fn, encoding='utf8').read().split('\n')
             data = [line.split('\t') for line in data]
 
@@ -217,7 +218,7 @@ def reinflection2TSV(fn, dir_name="data", mode=REINFLECTION_STR):
                 examples.append(f"{src}\t{trg}")
 
             open(new_fn, mode='w', encoding='utf8').write('\n'.join(examples))
-        new_fn = [new_train_fn, new_test_fn]
+        new_fn = [new_train_fn, new_dev_fn, new_test_fn]
         # The result is a directory "data\\LEMMA_TSV_FORMAT" with 180 files of the format 'lang.{trn|tst}.tsv'
     return new_fn
 
@@ -271,3 +272,7 @@ def showAttention(input_sentence, output_words, attentions, fig_name="Attention 
     ax.yaxis.set_major_locator(ticker.MultipleLocator(1))
     # plt.show()
     plt.savefig(fig_name)
+
+def set_lr(optim, lr):
+  for param_group in optim.param_groups:
+    param_group["lr"] = lr

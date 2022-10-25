@@ -13,6 +13,9 @@ class Encoder(nn.Module):
 
         self.fc_hidden = nn.Linear(hidden_size * 2, hidden_size)
         self.fc_cell = nn.Linear(hidden_size * 2, hidden_size)
+        # print("xavier uniform hidden init")
+        # nn.init.xavier_uniform_(self.fc_hidden.weight)
+        # nn.init.xavier_uniform_(self.fc_cell.weight)
         self.dropout = nn.Dropout(p)
 
     def forward(self, x):

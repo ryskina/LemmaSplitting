@@ -13,8 +13,8 @@ import itertools
 from collections import defaultdict
 
 import utils
-from utils import translate_sentence, bleu, save_checkpoint, load_checkpoint, get_langs_and_paths
-from torch.utils.tensorboard import SummaryWriter  # to print to tensorboard
+from utils import translate_sentence, bleu, save_checkpoint, load_checkpoint, get_langs_and_paths, set_lr
+from torch.utils.tensorboard.writer import SummaryWriter  # to print to tensorboard
 from torchtext.legacy.data import Field, BucketIterator, TabularDataset
 from Network import Encoder, Decoder, Seq2Seq
 from utils import srcField, trgField, device, reinflection2TSV, plt, showAttention, REINFLECTION_STR, INFLECTION_STR
@@ -28,6 +28,11 @@ def parse_args():
     parser.add_argument('--hall', action='store_true', help='Use hallucinated data')
     parser.add_argument('--nn', action='store_true', help='Use hallucinated NN data')
     parser.add_argument('--agg', action='store_true', help='Precision@k aggregation at test')
+    parser.add_argument('--embed-size', type=int, default=300, help='Embedding size')
+    parser.add_argument('--hidden-size', type=int, default=256, help='Hidden layer size')
+    parser.add_argument('--dropout', type=float, default=0.0, help='Dropout rate')   
+    parser.add_argument('--lr', type=float, default=3e-4, help='Learning rate')
+    parser.add_argument('--batch-size', type=int, default=32, help='Batch size')   
     return parser.parse_args()
 
 total_timer = datetime.now()
@@ -65,12 +70,14 @@ print(starter_s)
 
 # Add here the datasets creation, using TabularIterator (add custom functions for that)
 if not params.nn:
-    train_file, test_file = reinflection2TSV([f"{data_dir}/{fn}" for fn in files_paths[lang]], dir_name=tsv_dir, mode=INFLECTION_STR)
+    train_file, dev_file, test_file = reinflection2TSV([f"{data_dir}/{fn}" for fn in files_paths[lang]], dir_name=tsv_dir, mode=INFLECTION_STR)
 else:
     train_file = f"{tsv_dir}/{lang}.trn.tsv"
+    dev_file = f"{tsv_dir}/{lang}.dev.tsv"
     test_file = f"{tsv_dir}/{lang}.tst.tsv"
 
-train_data, test_data = TabularDataset.splits(path="", train=train_file, test=test_file, fields=datafields, format='tsv')
+# train_data, dev_data, test_data = TabularDataset.splits(path="", train=train_file, validation=dev_file, test=test_file, fields=datafields, format='tsv')
+train_data, dev_data, test_data = TabularDataset.splits(path="", train=train_file, validation=dev_file, test=test_file, fields=datafields, format='tsv')
 print(f"Found training examples: {len(train_data)}")
 concat_to_file(log_file, f"Found training examples: {len(train_data)}")
 
@@ -88,19 +95,19 @@ save_model = True
 
 # Training hyperparameters
 num_epochs = 50 # if choice in {1,2} else 10
-learning_rate = 3e-4
-batch_size = 32
+learning_rate = params.lr
+batch_size = params.batch_size
 
 # Model hyperparameters
 input_size_encoder = len(srcField.vocab)
 input_size_decoder = len(trgField.vocab)
 output_size = len(trgField.vocab)
-encoder_embedding_size = 300
-decoder_embedding_size = 300
-hidden_size = 256
+encoder_embedding_size = params.embed_size
+decoder_embedding_size = params.embed_size
+hidden_size = params.hidden_size
 num_layers = 1
-enc_dropout = 0.0
-dec_dropout = 0.0
+enc_dropout = params.dropout
+dec_dropout = params.dropout
 measure_str = 'Edit Distance'
 comment = f"epochs={num_epochs} lr={learning_rate} batch={batch_size} embed={encoder_embedding_size} hidden_size={hidden_size}"
 
@@ -112,8 +119,8 @@ writer = SummaryWriter(os.path.join(outputs_dir,"runs"), comment=comment)
 step = 0
 
 print("- Generating BucketIterator objects")
-train_iterator, test_iterator = BucketIterator.splits(
-    (train_data, test_data),
+train_iterator, dev_iterator, test_iterator = BucketIterator.splits(
+    (train_data, dev_data, test_data),
     batch_size=batch_size,
     sort_within_batch=True,
     sort_key=lambda x: len(x.src),
@@ -152,12 +159,16 @@ accs, eds = [], []
 
 print("Let's begin training!\n")
 concat_to_file(log_file,"Training...\n")
+
+# prev_best_dev_ed = None
+# prev_best_epoch = 0
+# patience = 10
+# cur_attempt = 0
+
+# epoch = 0
+# while epoch < num_epochs:
 for epoch in range(num_epochs):
     print(f"[Epoch {epoch} / {num_epochs}]  (lang={lang})")
-
-    if save_model:
-        checkpoint = {"state_dict": model.state_dict(), "optimizer": optimizer.state_dict(),}
-        save_checkpoint(checkpoint, os.path.join(outputs_dir, "my_checkpoint.pth.tar"))
 
     model.train()
 
@@ -207,11 +218,44 @@ for epoch in range(num_epochs):
         pred_print = ''.join(translated_sent)
         ed_print = utils.editDistance(trg_print, pred_print)
         print(f"{i+1}. input: {src_print} ; gold: {trg_print} ; pred: {pred_print} ; ED = {ed_print}")
-    result, accuracy = bleu(test_data, model, srcField, trgField, device, measure_str=measure_str, agg=agg_dict)
-    writer.add_scalar("Test Accuracy", accuracy, global_step=epoch)
-    print(f"avgED = {result}; avgAcc = {accuracy}\n")
-    accs.append(accuracy)
-    eds.append(result)
+
+    # train_result, train_accuracy = bleu(train_data, model, srcField, trgField, device, measure_str=measure_str, agg=agg_dict)
+    # writer.add_scalar("Train Accuracy", train_accuracy, global_step=epoch)
+    # print(f"train avgED = {train_result}; train avgAcc = {train_accuracy}")
+    dev_result, dev_accuracy = bleu(dev_data, model, srcField, trgField, device, measure_str=measure_str, agg=agg_dict)
+    writer.add_scalar("Dev Accuracy", dev_accuracy, global_step=epoch)
+    print(f"dev avgED = {dev_result}; dev avgAcc = {dev_accuracy}")
+    test_result, test_accuracy = bleu(test_data, model, srcField, trgField, device, measure_str=measure_str, agg=agg_dict)
+    writer.add_scalar("Test Accuracy", test_accuracy, global_step=epoch)
+    print(f"test avgED = {test_result}; test avgAcc = {test_accuracy}")
+
+    # if prev_best_dev_ed and result >= prev_best_dev_ed:
+    #     cur_attempt += 1
+    #     if cur_attempt > patience:
+    #         print("Early stopping: exhausted patience")
+    #         load_checkpoint(torch.load(os.path.join(outputs_dir,"my_checkpoint.pth.tar")), model, optimizer)
+    #         break
+    #     else:
+    #         print(f"No improvement in dev accuracy, attempt: {cur_attempt}")
+    #         load_checkpoint(torch.load(os.path.join(outputs_dir,"my_checkpoint.pth.tar")), model, optimizer)
+    #         learning_rate *= 0.75
+    #         set_lr(optimizer, learning_rate)
+    #         print(optimizer)
+    # else:
+    #     prev_best_dev_ed = result
+    #     prev_best_epoch = epoch
+    #     epoch += 1
+    #     cur_attempt = 0
+    #     # load_checkpoint(torch.load(os.path.join(outputs_dir,"my_checkpoint.pth.tar")), model, optimizer)
+
+    if save_model:
+        checkpoint = {"state_dict": model.state_dict(), "optimizer": optimizer.state_dict(),}
+        save_checkpoint(checkpoint, os.path.join(outputs_dir, "my_checkpoint.pth.tar"))
+
+
+    print()
+    accs.append(dev_accuracy)
+    eds.append(dev_result)
 
 # running on entire test data takes a while
 # score = bleu(test_data[1:100], model, srcField, trgField, device, measure_str='ed')
@@ -221,25 +265,8 @@ output_s = f"Results for Language={lang} from Family={lang2family[lang]}:\n {lan
             f" is {result:.2f}.\n {lang} Average Accuracy is {accuracy*100:.2f}.\n Elapsed time is {lang_runtime}.\n\n"
 concat_to_file(log_file, output_s) # write to log file
 print(output_s) # write to screen
-# results_df.loc[j] = [lang2family[lang], lang, np.round(accuracy,2), np.round(result,2)] # write to Excel file
-
-# plt.figure()
-# plt.subplot(211)
-# plt.title("Average ED on Test Set")
-# plt.plot(eds)
-# plt.subplot(212)
-# plt.title("Average Accuracy on Test Set")
-# plt.plot(accs)
-# plt.savefig(os.path.join(outputs_dir, "Results.png"))
 
 tot_runtime_s = f'\nTotal runtime: {str(datetime.now() - total_timer)}\n'
 
 concat_to_file(log_file, tot_runtime_s)
 print(tot_runtime_s)
-
-# accs, eds = results_df['Accuracy'], results_df['ED']
-# avgAcc, avgED, medAcc, medED = np.mean(accs), np.mean(eds), np.median(accs), np.median(eds)
-# final_stats_s = f"avgAcc={avgAcc:.2f}, avgED={avgED:.2f}, medAcc={medAcc:.2f}, medED={medED:.2f}\n"
-# concat_to_file(log_file, final_stats_s)
-# print(final_stats_s)
-# results_df.to_excel(f"ResultsFile{len(langs)}Langs{choice}.{training_mode}.xlsx")
